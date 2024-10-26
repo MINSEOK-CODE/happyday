@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.header {
+    background-color: #2f4858;
+    padding: 20px 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 2px;
+}
+
+.nav-links a:hover {
+    color: #ffcb77;
+    border-bottom: 2px solid #ffcb77;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    color: #2f4858;
+    margin-bottom: 30px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* 비디오 스타일 */
+.video-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.birthday-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.birthday-video:hover {
+    transform: scale(1.02);
+}
+
+.image-container, .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.photo, .gallery-photo, .cake-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover, .gallery-photo:hover, .cake-image:hover {
+    transform: scale(1.05);
+}
+
+.cake-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #2f4858;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* 반응형 스타일 */
+@media (min-width: 768px) {
+    .cake-row {
+        flex-direction: row;
+    }
+
+    .cake-image {
+        width: 48%;
+    }
+
+    .gallery-photo {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery-photo {
+        width: 30%;
+    }
+}
+
+.subtext {
+    font-size: 0.8em; /* 글씨 크기를 더 줄임 */
+    color: #374785; /* 깊은 블루 색상 유지 */
+    margin-top: 5px;
+    margin-bottom: 10px; /* 하단 여백 줄임 */
+    font-family: 'Montserrat', sans-serif; /* 세련된 Sans-serif 폰트 유지 */
+    font-weight: 500; /* 약간 두께 있는 폰트 */
+    letter-spacing: 0.2px; /* 글자 간격 최소화 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 1.2; /* 줄 간격 최소화 */
+}
